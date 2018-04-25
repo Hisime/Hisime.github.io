@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 129px;
+    padding: 6px;
+    height: 36px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: @light;
+    line-height: @line-height;
+    background-color: @purple;
+    color: @white;
+    text-decoration: none;
+    transition: background 0.3s;
+    border: none;
+    outline: none;
+
+
+    &:hover {
+      background-color: lighten(@purple, 10%);
+    }
+
+    &:active {
+      background-color: darken(@purple, 10%);
+    }
+    &:focus {
+      box-shadow: 0 0 3px 3px lighten(@purple, 30%);
+     }
+
+}

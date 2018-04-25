@@ -1,0 +1,248 @@
+.get-ide {
+  background-color: @dark-grey;
+  padding-bottom: 60px;
+  padding-top: 85px;
+
+  @media (min-width: @screen-xl) {
+    padding-bottom: 125px;
+  }
+
+
+  &__title {
+    font-size: 36px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    font-weight: @bold;
+    line-height: @line-height-high;
+    white-space: nowrap;
+    margin-right: 10px;
+    overflow: hidden;
+
+    @media (min-width: @screen-xl) {
+      font-size: @size-big;
+      line-height: 48px;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text {
+    color: @light-grey;
+    line-height: @line-height;
+    font-weight: @light;
+    margin-bottom: 55px;
+     @media (min-width: @screen-xl) {
+      display: none;
+     }
+  }
+
+  &__gamer {
+    height: 186px;
+    margin-bottom: 3px;
+
+    @media (min-width: @screen-xl) {
+      height: 238px;
+    }
+
+    img {
+      @media (min-width: @screen-xl) {
+        filter: grayscale(100%);
+        opacity: 0.4;
+      }
+    }
+
+    &--unity img {
+      @media (min-width: @screen-xl) {
+        width: 147px;
+        height: 220px;
+      }
+    }
+
+    &--unreal img {
+      @media (min-width: @screen-xl) {
+        width: 182px;
+        height: 238px;
+      }
+    }
+
+    &--mobile img {
+      @media (min-width: @screen-xl) {
+        width: 158px;
+        height: 227px;
+      }
+    }
+
+    &--casual img {
+      @media (min-width: @screen-xl) {
+        width: 162px;
+        height: 211px;
+      }
+    }
+  }
+
+
+  &__items-list {
+    .list-reset();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: @screen-xl) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 166px;
+    border: 1px solid #696969;
+    border-radius: 24px;
+    padding: 28px 10px 15px 10px;
+    text-align: center;
+    margin-right: 14px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+      @media (min-width: @screen-md) {margin-right: 14px;}
+      @media (min-width: @screen-xl) {
+        margin-right: 14px;
+      }
+    }
+     &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 212px;
+      height: 303px;
+      padding-bottom: 30px;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid @yellow;
+      }
+
+      &:nth-child(even) {
+        width: 228px;
+      }
+    }
+
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 5px 17px;
+    margin-right: 10px;
+    border: 1px solid @blue;
+    border-radius: 25px;
+    font-size: @size-small;
+    color: #afb1b3;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover, &:active {
+      color: #fff;
+      background-color: @blue;
+    }
+  }
+
+  &__item-product {
+    display: inline-flex;
+    align-items: flex-start;
+    vertical-align: top;
+    width: 34%;
+  }
+
+  &__product-name {
+    display: block;
+    font-size: @font-size;
+    line-height: @line-height;
+    color: @light-grey;
+    font-weight: @light;
+    margin-bottom: 10px;
+  }
+
+  &__product-descr {
+    font-size: @size-small;
+    line-height: @line-height-short;
+    color: #afb1b3;
+  }
+
+  &__item--active {
+    @media (min-width: @screen-xl) {
+      border: 2px solid @yellow;
+      .get-ide__gamer img {
+        filter:none;
+        opacity: 1;
+      }
+      .get-ide__icon svg {
+        fill: @yellow;
+      }
+      &:after {
+        @media (min-width: @screen-xl) {
+          content: '';
+          position: absolute;
+          bottom: 20px;
+          left: 30px;
+          width: 34px;
+          height: 23px;
+          background-image: url(../img/chars.svg);
+        }
+      }
+    }
+
+  }
+
+  &__name {
+    display: block;
+    font-size: @size-middle;
+    font-weight: @bold;
+    color: @white;
+    line-height: @line-height;
+    text-align: left;
+
+    @media (min-width: @screen-xl) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+
+    svg {
+      fill: @white;
+    }
+  }
+
+  &__items-contents {
+    display: none;
+    @media (min-width: @screen-xl) {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+  &__items-content {
+    display: none;
+  }
+
+  &__items-content--active {
+    display: block;
+  }
+
+  &__item-title {
+    display: block;
+    font-size: @size-middle;
+    line-height: @line-height;
+    color: @white;
+    font-weight: @bold;
+    margin-bottom: 20px;
+  }
+
+  &__product-right {
+    margin-left: 15px;
+    margin-top: 4px;
+  }
+}
+
