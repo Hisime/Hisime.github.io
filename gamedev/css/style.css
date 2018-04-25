@@ -7,22 +7,22 @@
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff');
+  src: url('../fonts/GothamPro-Bold.woff2') format('woff2'), url('../fonts/GothamPro-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Light.woff2') format('woff2'), url('../fonts/Gotham-Light.woff') format('woff');
+  src: url('../fonts/GothamPro-Light.woff2') format('woff2'), url('../fonts/GothamPro-Light.woff') format('woff');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamPro-Black.woff2') format('woff2'), url('../fonts/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -443,7 +443,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'Gotham', Helvetica, sans-serif, sans-serif;
+  font-family: 'Gotham', sans-serif, sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -643,10 +643,9 @@ template {
   padding-right: 10px;
 }
 body {
-  font-family: 'Gotham', Helvetica, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: 400;
   color: #fff;
-  text-rendering: optimizeLegibility;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -716,9 +715,9 @@ html {
   font-size: 0;
 }
 .hero-header__main-title {
-  font-size: 36px;
   margin-left: 12px;
   margin-top: 21px;
+  font-size: 36px;
   line-height: 36px;
 }
 .hero-header__game {
@@ -769,7 +768,7 @@ html {
   display: block;
   margin-top: 20px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
 }
 .achievements__items {
@@ -1054,12 +1053,12 @@ html {
   max-width: 100%;
 }
 .customers__title {
-  font-size: 50px;
-  line-height: 48px;
-  font-weight: 900;
-  letter-spacing: -0.87px;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 50px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.87px;
 }
 .customers__text {
   font-size: 18px;
@@ -1069,7 +1068,6 @@ html {
   margin-top: 47px;
 }
 .customers__companies {
-  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,6 +1079,7 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
   margin-top: 85px;
 }
@@ -1141,7 +1140,7 @@ html {
 }
 .contact-us__title {
   color: #161616;
-  font-size: 40px;
+  font-size: 15px;
   line-height: 48px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -1154,6 +1153,7 @@ html {
 }
 .contact-us__input,
 .contact-us__textarea {
+  display: block;
   width: 345px;
   max-width: 100%;
   border: 1px solid #afb1b3;
@@ -1161,7 +1161,6 @@ html {
   font-weight: 300;
   padding: 5px 10px;
   margin-bottom: 24px;
-  display: block;
   outline: none;
 }
 .contact-us__input::-webkit-input-placeholder,
