@@ -1,0 +1,150 @@
+.contact-us {
+  background-color: @white;
+  border-bottom: 45px solid #3b3f43;
+  background-image: url(../img/rushing.svg);
+  background-repeat: no-repeat;
+  background-position: 80% -11%;
+  padding-top: 320px;
+
+  @media (min-width: @screen-xl) {
+    background-size: 973px 614px;
+    background-position: -60% -70%;
+    padding-top: 38px;
+    padding-bottom: 65px;
+    border-bottom: 39px solid #3b3f43;
+  }
+
+  @media (min-width: 1600px) {
+    background-position: -20% -70%;
+  }
+
+
+  &__title {
+    color: @dark-grey;
+    font-size: @font-size;
+    line-height: 48px;
+    font-weight: @bold;
+    letter-spacing: -1px;
+     @media (min-width: @screen-xl) {
+      margin-bottom: 27px;
+     }
+  }
+
+  &__descr {
+    font-size: @font-size;
+    font-weight: @light;
+    color: @dark-grey;
+    line-height: @line-height;
+  }
+
+  &__input, &__textarea {
+    display: block;
+    width: 345px;
+    max-width: 100%;
+    border: 1px solid #afb1b3;
+    font-size: @font-size;
+    font-weight: @light;
+    padding: 5px 10px;
+    margin-bottom: 24px;
+    outline: none;
+
+    &::placeholder {
+      color: #afb1b3;
+    }
+    &:focus {
+      border: 1px solid #28a0fc;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 304px;
+    }
+  }
+
+  &__input {
+    height: 36px;
+  }
+
+  &__textarea {
+    outline: none;
+    height: 156px;
+    resize: none;
+  }
+
+  &__btn {
+    background-color: @purple;
+    border: none;
+    cursor: pointer;
+    color: @white;
+  }
+
+
+  &__inner {
+    @media (min-width: @screen-xl) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+
+  &__top {
+    margin-bottom: 100px;
+    @media (min-width: @screen-xl) {
+      width: 66%;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__bottom {
+    @media (min-width: @screen-xl) {
+      width: 66%;
+    }
+  }
+
+  &__bottom-title {
+    display: block;
+    color: @dark-grey;
+    font-weight: @bold;
+    font-size: @size-middle;
+    line-height: @line-height;
+    margin-bottom: 25px;
+  }
+
+  &__bottom-text {
+    font-size: @font-size;
+    line-height: @line-height;
+    color: #3c3f43;
+    font-weight: @light;
+
+    a {
+      color: #28a0fc;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 49%;
+    }
+  }
+
+  &__descr {
+    @media (min-width: @screen-xl) {
+      width: 50%;
+      margin-bottom: 23px;
+    }
+  }
+
+
+  &__form {
+    @media (min-width: @screen-lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__form-left, &__form-right {
+     @media (min-width: @screen-lg) { width: 48%;}
+  }
+
+}

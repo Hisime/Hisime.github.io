@@ -1,0 +1,134 @@
+.hero-header {
+  background-image: url(../img/gamer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: @dark-grey;
+
+  @media (min-width: @screen-md) and (max-width: @screen-xl-top) {
+    text-align: center;
+  }
+
+  @media (min-width: @screen-xl) {
+    background-image: none;
+  }
+
+  &__inner {
+    padding-bottom: 95px;
+    @media (min-width: @screen-xl) {
+      .container();
+      background-image: url(../img/gamer.svg);
+      background-position: -35% 0;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1100px) {
+      text-align: center;
+      width: 1100px;
+      background-position: 2% 0;
+    }
+
+  }
+
+
+  &__title {
+    padding-top: 219px;
+    font-size: 0;
+  }
+
+  &__main-title {
+    margin-left: 12px;
+    margin-top: 21px;
+    font-size: 36px;
+    line-height: 36px;
+
+    @media (min-width: @screen-md) and (max-width: @screen-xl-top) {
+      margin-top: 40px;
+     }
+
+    @media (min-width: @screen-xl) {
+      margin-left: 130px;
+      margin-top: 25px;
+      font-size: @size-big;
+      letter-spacing: -1px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__game {
+    display: block;
+    margin-left: 23px;
+
+
+    @media (min-width: @screen-md) {
+      display: inline-block;
+       margin-bottom: -40px;
+     }
+
+    @media (min-width: @screen-xl) {
+      width: 325px;
+      height: 86px;
+    }
+  }
+
+  &__changing {
+    margin-top: 9px;
+    font-size: 0;
+
+     @media (min-width: @screen-md)  {
+      display: inline-block;
+     }
+
+
+    @media (min-width: @screen-xl) {
+      display: inline-block;
+      width: 596px;
+      height: 86px;
+    }
+  }
+
+  &__engines-text {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: @font-size;
+    font-weight: @light;
+
+    @media (min-width: @screen-xl) {
+      font-size: @size-middle;
+      font-weight: @bold;
+      display: inline-block;
+    }
+  }
+
+  &__unity {
+    display: inline-block;
+    vertical-align: middle;
+    @media (min-width: @screen-xl) {
+      width: 112px;
+      height: 41px;
+      margin-left: 40px;
+    }
+  }
+
+  &__unreal {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    @media (min-width: @screen-xl) {
+      width: 145px;
+      height: 52px;
+      margin-left: 30px;
+    }
+  }
+
+  &__engines {
+    margin-left: 20px;
+    @media (min-width: @screen-xl) {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 55px;
+    }
+  }
+}

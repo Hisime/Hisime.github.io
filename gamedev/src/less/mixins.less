@@ -1,0 +1,35 @@
+.container {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: @padding-width;
+  padding-right: @padding-width;
+
+
+  @media (min-width: @screen-sm) {
+    width: @container-sm;
+  }
+
+  @media (min-width: @screen-md) {
+    width: @container-md;
+  }
+
+  @media (min-width: @screen-lg) {
+    width: @container-lg;
+  }
+
+  @media (min-width: @screen-xl) {
+    width: @container-xl;
+  }
+
+}
+
+.list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+

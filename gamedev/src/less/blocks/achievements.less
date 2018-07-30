@@ -1,0 +1,80 @@
+.achievements {
+  background-color: @dark-grey;
+  padding-top: 36px;
+  &__title {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: @line-height-high;
+    font-weight: bold;
+
+    @media (min-width: @screen-xl) {
+      margin-bottom: 35px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin-top: 5px;
+    font-size: 15px;
+    color: @light-grey;
+    line-height: @line-height;
+    font-weight: @light;
+
+    @media (min-width: @screen-xl) {
+      margin-top: 25px;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-top: 20px;
+    font-size: @size-middle;
+    font-weight: @bold;
+    line-height: @line-height;
+
+    @media (min-width: @screen-xl) {
+      margin-top: 34px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: @screen-xl) {
+      padding-right: 130px;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 35px;
+
+    @media (min-width: @screen-lg) {
+      width: 33%;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: 24%;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    height: 53px;
+
+    svg {
+
+      @media (min-width: @screen-xl) {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+  }
+
+
+}

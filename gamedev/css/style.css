@@ -1,56 +1,30 @@
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff');
-  font-weight: 500;
+  src: url('../fonts/GothamPro.woff2') format('woff2'), url('../fonts/GothamPro.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff');
-  font-weight: bold;
+  src: url('../fonts/GothamPro-Bold.woff2') format('woff2'), url('../fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-MediumItalic.woff2') format('woff2'), url('../fonts/Gotham-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Light.woff2') format('woff2'), url('../fonts/Gotham-Light.woff') format('woff');
+  src: url('../fonts/GothamPro-Light.woff2') format('woff2'), url('../fonts/GothamPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff');
-  font-weight: normal;
+  src: url('../fonts/GothamPro-Black.woff2') format('woff2'), url('../fonts/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-BookItalic.woff2') format('woff2'), url('../fonts/Gotham-BookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-LightItalic.woff2') format('woff2'), url('../fonts/Gotham-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-BoldItalic.woff2') format('woff2'), url('../fonts/Gotham-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
+  font-display: swap;
 }
 /**
  * Owl Carousel v2.2.0
@@ -690,6 +664,7 @@ html {
   text-align: center;
   width: 129px;
   padding: 6px;
+  height: 36px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   font-size: 15px;
@@ -733,16 +708,16 @@ html {
   background-color: #161616;
 }
 .hero-header__inner {
-  padding-bottom: 155px;
+  padding-bottom: 95px;
 }
 .hero-header__title {
   padding-top: 219px;
   font-size: 0;
 }
 .hero-header__main-title {
-  font-size: 36px;
   margin-left: 12px;
   margin-top: 21px;
+  font-size: 36px;
   line-height: 36px;
 }
 .hero-header__game {
@@ -756,15 +731,18 @@ html {
 .hero-header__engines-text {
   display: block;
   margin-top: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 15px;
   font-weight: 300;
 }
 .hero-header__unity {
   display: inline-block;
   vertical-align: middle;
-  width: 112px;
-  height: 41px;
+}
+.hero-header__unreal {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
 }
 .hero-header__engines {
   margin-left: 20px;
@@ -776,6 +754,7 @@ html {
 .achievements__title {
   margin-bottom: 70px;
   font-size: 36px;
+  line-height: 36px;
   font-weight: bold;
 }
 .achievements__text {
@@ -789,7 +768,7 @@ html {
   display: block;
   margin-top: 20px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
 }
 .achievements__items {
@@ -958,7 +937,6 @@ html {
 }
 .hint {
   padding-top: 20px;
-  padding-bottom: 115px;
   background-color: #161616;
 }
 .hint__icon {
@@ -989,6 +967,7 @@ html {
 }
 .multiplayer {
   background-color: #161616;
+  padding-top: 115px;
 }
 .multiplayer__inner {
   position: relative;
@@ -1056,6 +1035,7 @@ html {
   line-height: 18px;
   margin-top: 0;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 .multiplayer__icon {
   margin-bottom: 15px;
@@ -1073,12 +1053,12 @@ html {
   max-width: 100%;
 }
 .customers__title {
-  font-size: 50px;
-  line-height: 48px;
-  font-weight: 900;
-  letter-spacing: -0.87px;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 50px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.87px;
 }
 .customers__text {
   font-size: 18px;
@@ -1088,7 +1068,6 @@ html {
   margin-top: 47px;
 }
 .customers__companies {
-  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1100,6 +1079,7 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
   margin-top: 85px;
 }
@@ -1147,6 +1127,8 @@ html {
   color: #afb1b3;
   font-size: 12px;
   line-height: 18px;
+  font-weight: 300;
+  font-style: normal;
 }
 .contact-us {
   background-color: #fff;
@@ -1158,7 +1140,7 @@ html {
 }
 .contact-us__title {
   color: #161616;
-  font-size: 40px;
+  font-size: 15px;
   line-height: 48px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -1171,6 +1153,7 @@ html {
 }
 .contact-us__input,
 .contact-us__textarea {
+  display: block;
   width: 345px;
   max-width: 100%;
   border: 1px solid #afb1b3;
@@ -1178,7 +1161,6 @@ html {
   font-weight: 300;
   padding: 5px 10px;
   margin-bottom: 24px;
-  display: block;
   outline: none;
 }
 .contact-us__input::-webkit-input-placeholder,
@@ -1286,7 +1268,7 @@ html {
   left: 5px;
   width: 32px;
   height: 45px;
-  background: url(../../img/player.svg);
+  background: url(../img/player.svg);
 }
 @media (min-width: 375px) {
   .container {
@@ -1397,9 +1379,10 @@ html {
     background-repeat: no-repeat;
   }
   .hero-header__main-title {
-    margin-left: 350px;
+    margin-left: 130px;
     margin-top: 25px;
     font-size: 40px;
+    letter-spacing: -1px;
   }
   .hero-header__main-title br {
     display: none;
@@ -1418,9 +1401,20 @@ html {
     font-weight: 700;
     display: inline-block;
   }
+  .hero-header__unity {
+    width: 112px;
+    height: 41px;
+    margin-left: 40px;
+  }
+  .hero-header__unreal {
+    width: 145px;
+    height: 52px;
+    margin-left: 30px;
+  }
   .hero-header__engines {
     text-align: center;
     margin-left: 0;
+    margin-top: 55px;
   }
   .achievements__title {
     margin-bottom: 35px;
@@ -1519,9 +1513,6 @@ html {
     display: block;
     margin-top: 15px;
   }
-  .hint {
-    padding-bottom: 220px;
-  }
   .hint__inner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1547,6 +1538,9 @@ html {
     margin-left: 30px;
     margin-bottom: 0;
     margin-top: 5px;
+  }
+  .multiplayer {
+    padding-top: 220px;
   }
   .multiplayer__inner {
     width: 960px;
@@ -1692,6 +1686,13 @@ html {
     width: 980px;
   }
 }
+@media (min-width: 1100px) {
+  .hero-header__inner {
+    text-align: center;
+    width: 1100px;
+    background-position: 2% 0;
+  }
+}
 @media (min-width: 1200px) {
   .steps {
     display: block;
@@ -1700,10 +1701,5 @@ html {
 @media (min-width: 1600px) {
   .contact-us {
     background-position: -20% -70%;
-  }
-}
-@media (min-width: 0) {
-  .get-ide__item:nth-child(2n) {
-    margin-right: 14px;
   }
 }
