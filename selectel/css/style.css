@@ -224,15 +224,6 @@ template {
 [hidden] {
   display: none;
 }
-.container {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -241,6 +232,14 @@ body {
 html {
   box-sizing: border-box;
   height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
 }
 .wrapper {
   display: -ms-flexbox;
@@ -253,13 +252,14 @@ html {
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-a {
-  text-decoration: none;
+.container {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
 .btn {
   width: 154px;
