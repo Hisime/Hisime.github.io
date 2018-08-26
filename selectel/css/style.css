@@ -283,10 +283,10 @@ a {
 .page-header {
   width: 100%;
   position: absolute;
+  z-index: 4;
   left: 0;
   top: 0;
   padding-top: 40px;
-  z-index: 1;
 }
 .page-header__inner {
   display: -ms-flexbox;
@@ -333,6 +333,7 @@ a {
   position: relative;
   width: 100%;
   height: 600px;
+  background-color: #000;
 }
 .hero-header__item {
   visibility: hidden;
@@ -348,6 +349,7 @@ a {
 }
 .hero-header__item--active {
   opacity: 1;
+  z-index: 2;
   visibility: visible;
   transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
 }
@@ -373,6 +375,7 @@ a {
 }
 .hero-header__dots {
   position: absolute;
+  z-index: 3;
   display: -ms-flexbox;
   display: flex;
   left: 50%;
@@ -381,6 +384,7 @@ a {
 }
 .hero-header__arrows {
   position: absolute;
+  z-index: 3;
   display: -ms-flexbox;
   display: flex;
   bottom: 24px;
