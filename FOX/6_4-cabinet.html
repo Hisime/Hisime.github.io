@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+-->
+    <title>FOX</title>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta content="telephone=no" name="format-detection"/>
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/cloud-zoom.css">
+     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    
+</head>
+<body>
+
+
+
+    <header id="header">
+           <div class="header-top">
+            <div class="container ">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="gender-menu">               
+                         <div class="gender" data-filter="woman">Женщины</div>
+                         <div class="gender" data-filter="man">Мужчины</div>
+                    </div>
+                    
+                    <button class="gumb-mob-menu">
+                           <img src="img/ic-gumb.png" alt="">
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="left-menu">
+                       <div class="enter-bl">
+                        <a href="#" class="button enter" >Вход
+                        </a>
+                        
+                        <div class="enter-form">
+                            <div class="">
+                                <button type="button" class="close" data-dismiss="modal"><img src="img/ic-close2.png" alt=""></button>
+                                <h3>Личный кабинет</h3>
+                            </div>
+
+                            <div class="">
+                                <form action="">
+                                       <input type="text" name="login" placeholder="Логин">
+                                       <input type="password" name="password" placeholder="Пароль">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <a href="#">Регистрация</a>
+                                                <a href="#">Восстановить пароль</a>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <button class="btn">Войти</button>
+                                        </div>
+                                        </div>
+                                
+                                </form>
+
+                            </div>         
+                        </div>
+                        </div>
+                       
+                        <a href="4_1-registr.html" class="button">Регистрация
+                        </a>
+                        <a href="#" class="favor">
+                           <img src="img/ic-heart.png" alt="">
+                            <span>123</span>
+                        </a>
+                        <a href="#" class="basket">
+                           <img src="img/ic-bask.png" alt="">
+                            <span>0</span>
+                        </a>
+                        <div class="sear-bl">
+                            <button type="submit" class="sear2 search-hid"> <img src="img/ic-search.png" alt=""></button>
+                            <div class="search-form search-form-2">
+                                        <form action="">
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Цена
+                                           </div>
+                                           <div class="col-md-3 col-bl price">
+                                               <input type="text" placeholder="От" name="price">
+                                           </div>
+                                           <div class="col-md-3 col-bl price">
+                                               <input type="text" placeholder="До" name="price">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Название
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text"  name="name">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl">
+                                               Артикул
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text" name="index">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Текст
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text" name="text">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl">
+                                               Выберите категорию
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="categories" >
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Производитель
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="producers">
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Новинка
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="new" >
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Спецпредложение
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="spec-offer" >
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Результатов на странице
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="results">
+                                                   <option value="all">5</option>
+                                                   <option value="all">10</option>
+                                                   <option value="all">15</option>
+                                                   <option value="all">20</option>
+                                               </select>
+                                           </div>
+                                        </div> 
+                                        </form>
+                        </div>
+                        </div>
+                        <button class="gumb">
+                           <img src="img/ic-gumb.png" alt="">
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+               
+    <nav>
+        <div class="container">
+            <div class="row">
+             
+                <div class="nav-bl"> 
+                  <ul class="menu-woman">
+                    <li class="m-item"><a href="#">новинки</a></li>
+                       <li class="m-item"><a href="#">дизайнер</a> 
+                        <div class="sub-menu designers">
+                          <div class="container">
+                           <div class="row">
+                               <div class="col-md-9 m-bl">
+                                  <div class="row">
+                                   <ul class="group-list">
+                                       <div class="col-md-3">
+                                            <li class="item-list">
+                                            <h4>123</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">120% LINO</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                            <li class="item-list">
+                                            <h4>A</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">AGNONA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">AKRS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">AKRS PUNTO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ALTO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ALTO MILANO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ANDRE MAURICE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">AQUILANO RIMONDI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">AVANT TOI</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        </div>
+                                        
+                                        <div class="col-md-3">
+                                        <li class="item-list">
+                                            <h4>F</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">FABIO TOMA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FABRIZIO DEL CARLO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FALIERO SARTI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FAY</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">FIORONI</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="item-list">
+                                            <h4>G</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">GIORGIO BRATO</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="item-list">
+                                            <h4>Н</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">HENRY BEGUELIN</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Herno</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">HOGAN REBEL</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        </div>
+                                        
+                                        <div class="col-md-3">
+                                        <li class="item-list">
+                                            <h4>M</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">MAISON ULLENS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MANDELLI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MASSIMO ALBA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">METAMORFOSI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MICHAEL KORS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MISSONI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MISSONI MARE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MORGANO</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="item-list">
+                                            <h4>n</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">N21</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                       </div>
+                                       
+                                       <div class="col-md-3">
+                                        <li class="item-list">
+                                            <h4>V</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">VENEZIANI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VICEDOMINI</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VITTORIA SEDICI</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="item-list">
+                                            <h4>W</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">WLNS WELLNESS CASHMERE</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="item-list">
+                                            <h4>X</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">XACUS</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="item-list">
+                                            <h4>Z</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ZANELLATO</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="item-list">
+                                            <h4>А</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">АННА КРАСНАЯ</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                       </div>
+                                    </ul>
+                                    </div>
+                               </div>
+                               <div class="col-md-3">
+                                   <div class="recommend">
+                                      <a href="">
+                                       <img src="img/bg-item-1.jpg" alt="">
+                                       <div class="title">РЕКОМЕНДОВаННЫЙ бренд</div>
+                                       </a>
+                                   </div>
+                               </div>
+                               
+                           </div>
+                          </div>
+                        </div>
+                    </li><li class="m-item"><a href="#">одежда</a>
+                        <div class="sub-menu">
+                          <div class="container">
+                           <div class="row">
+                               <div class="col-md-9 m-bl">    
+                                   <ul class="group-list">
+                                      <li class="item-list">
+                                            <h4>ОДЕЖДА</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Блузы</a>
+                                                </li>
+                                                <li>
+                                                <li class="submenu2">  
+                                                    <a href="#" class="open-list">Френчи и пиджаки </a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                              
+                                                <li>
+                                                    <a href="#">Брюки и юбки</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Готовые комплекты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Платья и сарафаны</a>
+                                                </li>
+                                                <li class="submenu2">  
+                                                    <a href="#" class="open-list">Блузы</a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                                <li>
+                                                    <a href="#">Френчи и пиджаки </a>
+                                                </li>
+                                                 <li class="submenu2">  
+                                                    <a href="#" class="open-list">Брюки и юбки</a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                                <li>
+                                                    <a href="#">Готовые комплекты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Платья и сарафаны</a>
+                                                </li>
+                                            </ul>
+                                               <ul>
+                                                <li>
+                                                    <a href="#">Блузы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Френчи и пиджаки </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Брюки и юбки</a>
+                                                </li>
+                                                 <li class="submenu2">  
+                                                    <a href="#" class="open-list">Готовые комплекты</a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                                <li>
+                                                    <a href="#">Платья и сарафаны</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                       
+                                       <li class="item-list">
+                                            <h4>МЕХОВЫЕ ИЗДЕЛИЯ</h4>
+                                            <ul>
+                                                <li class="submenu2">  
+                                                    <a href="#" class="open-list">Шубы и полушубки</a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                                
+                                                <li class="submenu2">  
+                                                    <a href="#" class="open-list">Жилеты</a>
+                                                    <a class="carret1"></a>
+                                                    <ul class="submenu3">
+                                                        <li>
+                                                            <a href="#"> Пункт меню третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> Третий уровень</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Тест</a>
+                                                        </li>
+                                                    </ul>
+                                                
+                                                </li>
+                                                <li>
+                                                    <a href="#">Куртки и пиджаки </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Шапки и муфты</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                               </div>
+                               <div class="col-md-3">
+                                   <div class="recommend">
+                                      <a href="">
+                                       <img src="img/bg-item-1.jpg" alt="">
+                                       <div class="title">Наш выбор</div>
+                                       </a>
+                                   </div>
+                               </div>
+                               
+                           </div>
+                          </div>
+                        </div>
+                    </li><li class="m-item"><a href="#">обувь</a></li><li class="m-item"><a href="#">аксессуары</a></li><li class="m-item"><a href="#">акции</a></li><li class="m-item"><a href="#" class="sale">распродажа</a></li>
+                  </ul>
+                  <ul class="menu-man">
+                    <li class="m-item"><a href="#">новинки</a></li>
+<!--                    <li><a href="#">дизайнер</a></li>-->
+                    <li class="m-item"><a href="#">одежда</a></li>
+                    <li class="m-item"><a href="#">обувь</a></li>
+                    <li class="m-item"><a href="#">аксессуары</a></li>
+                    <li class="m-item"><a href="#">акции</a></li>             
+                    <li class="m-item"><a href="#" class="sale">распродажа</a></li>
+                  </ul>
+                  <div class="bl-arr">
+                    <div class="arr"></div>
+                </div>
+                </div>  
+         
+             
+                <div class="search">
+                    <form>
+                         <input type="search" name="search" placeholder="Поиск">
+                         <div class="setting"> <img src="img/ic-setting.png" alt=""></div>
+                         <button type="submit" class="sear"> <img src="img/ic-search.png" alt=""></button>
+                  
+                      <div class="search-form search-form-1">
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Цена
+                                           </div>
+                                           <div class="col-md-3 col-bl price">
+                                               <input type="text" placeholder="От" name="price">
+                                           </div>
+                                           <div class="col-md-3 col-bl price">
+                                               <input type="text" placeholder="До" name="price">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Название
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text"  name="name">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl">
+                                               Артикул
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text" name="index">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Текст
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <input type="text" name="text">
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl">
+                                               Выберите категорию
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="categories">
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Производитель
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="producers">
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Новинка
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="new">
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl bg">
+                                               Спецпредложение
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="spec-offer">
+                                                   <option value="all">Все</option>
+                                                   <option value="">Новинки</option>
+                                                   <option value="">Дизайнер</option>
+                                                   <option value="">Одежда</option>
+                                                   <option value="">Обувь</option>
+                                                   <option value="">Аксессуары</option>
+                                                   <option value="">Акции</option>
+                                                   <option value="">Распродажа</option>
+                                               </select>
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                           <div class="col-md-6 col-bl ">
+                                               Результатов на странице
+                                           </div>
+                                           <div class="col-md-6 col-bl">
+                                               <select name="results">
+                                                   <option value="all">5</option>
+                                                   <option value="all">10</option>
+                                                   <option value="all">15</option>
+                                                   <option value="all">20</option>
+                                               </select>
+                                           </div>
+                                        </div> 
+                        </div>
+                        </form>
+                </div>
+        
+                
+            </div>
+        </div> 
+        <div class="sub-menu">
+            <div class="container">
+                
+            </div>
+        </div>         
+    </nav>
+
+    </header>
+    
+    <article class="bread-crumb">
+        <div class="container">
+            <div class="breadcrumb">
+                <span><a href="1-titulnik.html">Главная</a></span> <span>/</span> <span> Личный кабинет</span>
+            </div>
+        </div>
+
+    </article>
+    
+   <article class="cabinet">
+       <h1>Личные данные</h1>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-3">
+                   <div class="sidebar">
+                       <ul>
+                           <li><a href="#">Личный кабинет</a></li>
+                           <li><a href="#"  class="active">Личные данные</a></li>
+                           <li><a href="#">Ваш пароль</a></li>
+                           <li><a href="#">Корзина</a></li>
+                           <li><a href="#">Личное предложение</a></li>
+                           <li><a href="#" >История заказов</a></li>
+                       </ul>
+                       
+                       <a href="#" class="exit">Выйти</a>
+                       
+                       <div class="user-ph">
+                           <img src="img/cabinet/photo-woman.jpg" alt="">
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-9">
+                    <div class="person-data">
+                       <form action="#">    
+              <div class="row">
+               <div class="col-md-4">
+                   <div class="check-item">
+                       <h3>Личные данные:</h3>
+                       <div>
+                           <label for="surname">Фамилия: *</label>
+                           <input type="text" id="surname" name="surname" placeholder="Иванов" required>
+                       </div>
+                       <div>
+                           <label for="name">Имя: *</label>
+                           <input type="text" id="name" name="name" placeholder="Иван" required>
+                       </div>
+                       <div>
+                           <label for="patronymic">Отчество: *</label>
+                           <input type="text"  id="patronymic" name="patronymic" placeholder="Иванович" required>
+                       </div>
+                       <div class="b-date">
+                           <label for="b-day">Дата рождения: *</label>
+                           <input type="text" id="b-day" name="birthday" placeholder="День" required>
+                           <input type="text"  name="month" placeholder="Месяц" required>
+                           <input type="text"  name="year" placeholder="Год" required>
+                       </div>
+                       <div class="gend">
+                           <label>Пол: *</label>             
+                               <input type="checkbox" id="female" name="female" ><label for="female">Женский</label>
+                               <input type="checkbox" id="male" name="male"><label for="male">Мужской</label>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="check-item">
+                       <h3>Контактные данные:</h3>
+                       <div>
+                           <label for="phone">Контактный телефон: *</label>
+                           <input type="tel" id="phone" name="phone" placeholder="+7(___) ___-__-__" required>
+                       </div>
+                       <div>
+                           <label for="email">E-mail: *</label>
+                           <input type="email" id="email" name="email" placeholder="test@mail.ru"  required>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="check-item">
+                       <h3>Адрес доставки:</h3>
+                       <div>
+                           <label for="city">Город: *</label>
+                           <input type="text" id="city" name="city" placeholder="Бологое"  required>
+                       </div>
+                       <div>
+                           <label for="sreet">Улица *</label>
+                           <input type="text" id="sreet" name="sreet" placeholder="Название улицы" required>
+                       </div>
+                       <div class="numb-house">
+                           <label>Дом: * <input type="text" name="house" placeholder="102" required></label>
+                           <label>Корпус: <input type="text" name="housing" placeholder="1 А"></label>
+                           <label>Подъезд: <input type="text" name="entrance" placeholder="5"></label>
+                           <label>Строение:<input type="text" name="building" placeholder="2"></label>
+                           <label>Этаж: <input type="text" name="floor" placeholder="5"></label>
+                           <label>Квартира: * <input type="text" name="room" placeholder="102" required></label>
+                       </div>
+                   </div>
+               </div>
+               </div>
+                <div class="btns">
+                   <button class="btn" type="submit">Редактировать</button>
+               </div>
+               <div class="agree">
+                   <input type="checkbox" name="agree" id="agree" checked> <label for="agree">я согласен с условиями обработки персональных данных <a href="">подробнее</a></label>
+               </div>
+              
+           </form>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </article>
+   
+    <article class="benefits">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-xs-6">
+                  <a href="#" class="item-ben">
+                    <img src="img/ic-benefits-1.png" alt="">
+                    <div class="text">Бесплатная доставка</div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <a href="#" class="item-ben">
+                    <img src="img/ic-benefits-2.png" alt="">
+                    <div class="text">Примерка товаров</div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <a href="#" class="item-ben">
+                    <img src="img/ic-benefits-3.png" alt="">
+                    <div class="text">Оплата курьеру</div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <a href="#" class="item-ben">
+                    <img src="img/ic-benefits-4.png" alt="">
+                    <div class="text">Гибкая система скидок</div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <div class="questions" data-toggle="modal" data-target="#quest-form">
+        <div class="quest ">
+            Задайте свой вопрос
+        </div>
+      </div>
+      
+    <footer>
+        <div class="container">
+            <div class="row row-1">
+                <div class="col-md-6 col-xs-12 col6">
+                    <div class="common">
+                      <div class="logo-soc">
+                        <div class="logo">
+                            <img src="img/logo-foot.png" alt="">
+                        </div>
+                        <div class="social">
+                            <a href="#" target=”_blank”> <img src="img/ic-social-1.png" alt=""></a>
+                            <a href="#" target=”_blank”> <img src="img/ic-social-2.png" alt=""></a>
+                            <a href="#" target=”_blank”> <img src="img/ic-social-3.png" alt=""></a>
+                            <a href="#" target=”_blank”> <img src="img/ic-social-4.png" alt=""></a>
+                            <a href="#" target=”_blank”> <img src="img/ic-social-5.png" alt=""></a>
+                            <a href="#" target=”_blank”> <img src="img/ic-social-6.png" alt=""></a>
+                        </div>
+                     </div>
+                        <div class="phone"><span class="first-numb">+7</span> <span class="code">(932)</span> 434-88-80 <span class="first-numb">&ensp;/&ensp;</span> <span class="work-time">заказ по телефону с 08:00 до 17:00 (Мск)</span></div>
+                    <div class="subscribe">
+                        <form action="#">
+                            <input type="email" name="subscribe" placeholder="Подписаться на новости магазина">
+                            <button type=”submit” class="message"><img src="img/ic-message.png" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="payment">
+                        Мы принимаем к оплате:
+                        <div><img src="img/ic-payment-1.png" alt=""></div>
+                        <div><img src="img/ic-payment-2.png" alt=""></div>
+                        <div><img src="img/ic-payment-3.png" alt=""></div>
+                        <div><img src="img/ic-payment-4.png" alt=""></div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col6">
+                    <div class="menu-foot">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                               <h4>Помощь</h4>
+                                <ul>
+                                    <li><a href="#">Как оформить заказ</a></li>
+                                    <li><a href="#">Как выбрать размер</a></li>
+                                    <li><a href="#">Условия доставки</a></li>
+                                    <li><a href="#">Возврат</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 separ-1">
+                               <h4>О компании</h4>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Вакансии</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>  
+          <div class="separate"></div>
+           <div class="container">
+            <div class="row">
+                <div class="create">
+                    © 2012-2017. Интернет-магазин одежды, обуви, аксессуаров и меховых изделий FOX.<br>
+                    Создание сайта - <a href="https://megagroup.ru/">Exclusive <img src="img/logo-mega.png" alt="">  Megagroup.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+<!-- modal windows -->
+<div class="modal modalPopup fade modalForm table-size" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true" id="woman-table">
+    <div class="modal-dialog modal-lg ">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><img src="img/ic-close2.png" alt=""></button>
+                <h3>Таблица размеров</h3>
+                <h4>(Женщины)</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#menu1">Одежда</a></li>
+                  <li><a data-toggle="tab" href="#menu2">Джинсы и брюки</a></li>
+                  <li><a data-toggle="tab" href="#menu3">Обувь</a></li>
+                  <li><a data-toggle="tab" href="#menu4">Перчатки</a></li>
+                  <li><a data-toggle="tab" href="#menu5">Головные уборы</a></li>
+                  <li><a data-toggle="tab" href="#menu6">Белье</a></li>
+              </ul>
+
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                </table>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                </table>
+                  </div>
+                  <div id="menu3" class="tab-pane fade">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>             
+                </tr>
+                </table>
+                  </div>
+                  <div id="menu4" class="tab-pane fade in active">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                </table>
+                  </div>
+                  <div id="menu5" class="tab-pane fade">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                </table>
+                  </div>
+                  <div id="menu6" class="tab-pane fade">
+                    <table>
+                <tr>
+                    <th>RUS</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>IT</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>USA</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                <tr>
+                    <th>Длина ступни, см</th><td>35</td><td>35,5</td><td>36</td><td>36,5</td>  <td>37</td>            <td> 37,5</td><td>38</td><td>38,5</td><td>39</td><td>39,5</td>               <td>40</td> <td>40,5</td> <td>41</td>
+                </tr>
+                </table>
+                  </div>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+                <div class="consult">
+                    Нужна помощь в выборе размера? <br>
+                    Обратитесь к консультанту по тел. <b>8 (932) 434-88-80</b><br>
+с 08:00 до 17:00 (мск)
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- modal windows О компании-->
+<div class="gumb-company">
+    <button type="button" class="close" data-dismiss="modal"><img src="img/ic-close2.png" alt=""></button>
+    <div class="gumb-bl">
+        <h3>О КОМПАНИИ</h3>
+        <ul>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="gumb-bl">
+        <h3>Помощь</h3>
+        <ul>
+            <li><a href="#">Как оформить заказ</a></li>
+            <li><a href="#">Возврат</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+</div>
+
+<!-- modal windows Задать вопрос -->
+<div class="modal modalPopup fade modalForm subs-form" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true" id="quest-form">
+    <div class="modal-dialog modal-lg ">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><img src="img/ic-close2.png" alt=""></button>
+                <h3>Задать вопрос эксперту </h3>
+                <h4>Заполните, пожалуйста, данную форму и наш менеджер свяжется с Вами <br> в ближайшее время для уточнения деталей</h4>
+            </div>
+            <div class="modal-body">
+               <div class="subs-item">
+                           <form action="">
+                               <input type="text" name="name" placeholder="Ваше имя *">
+                               <input type="email" name="email" placeholder="E-mail *">
+                               <input type="tel"  name="phone" placeholder="+7(___) ___-__-__ " required>
+                               
+                               <textarea name=""  placeholder="Текст сообщения"></textarea>
+                               <div class="agree">
+                                   <input type="checkbox" name="agree" id="agree5" checked> <label for="agree5">я согласен с условиями обработки персональных данных <a href="№">подробнее</a></label>
+                               </div>
+                               <button class="btn">Отправить запрос</button>
+                               
+                           </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal windows МОБИЛЬНОЕ МЕНЮ-->
+
+<div class="mob-menu">
+    <button type="button" class="close" data-dismiss="modal"><img src="img/ic-close2.png" alt=""></button>
+    
+    <div class="modal-body">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#menu-mob1">Женщины</a></li>
+                  <li><a data-toggle="tab" href="#menu-mob2">Мужчины</a></li>
+              </ul>
+
+                <div class="tab-content">
+                  <div id="menu-mob1" class="tab-pane fade in active">
+                      <div class="panel-group wrap" id="accordion-menu" role="tablist" aria-multiselectable="true">
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                    <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseOne-menu" aria-expanded="false" aria-controls="collapseOne-menu">
+                                      Одежда
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingTwo-menu">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseTwo-menu" aria-expanded="false" aria-controls="collapseTwo-menu">
+                                      Обувь
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingThree-menu">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseThree-menu" aria-expanded="false" aria-controls="collapseThree-menu">
+                                      Аксессуары
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThree-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingFour-menu">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseFour-menu" aria-expanded="false" aria-controls="collapseFour-menu">
+                                      Дизайнер
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFour-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingFive-menu">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseFive-menu" aria-expanded="false" aria-controls="collapseFive-menu">
+                                      Акции
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFive-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingSix-menu">
+                                  <h4 class="panel-title news">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu" href="#collapseSix-menu" aria-expanded="false" aria-controls="collapseSix-menu">
+                                      Новинки
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSix-menu" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix-menu">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->                    
+                        </div>
+                        <!-- end of #accordion -->
+                  </div>
+                  <div id="menu-mob2" class="tab-pane fade">
+                      <div class="panel-group wrap" id="accordion-menu2" role="tablist" aria-multiselectable="true">
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne-menu2">
+                                    <h4 class="panel-title">
+                                    <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseOne-menu2" aria-expanded="false" aria-controls="collapseOne-menu2">
+                                      Одежда
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingTwo-menu2">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseTwo-menu2" aria-expanded="false" aria-controls="collapseTwo-menu2">
+                                      Обувь
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingThree-menu2">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseThree-menu2" aria-expanded="false" aria-controls="collapseThree-menu2">
+                                      Аксессуары
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThree-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingFour-menu2">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseFour-menu2" aria-expanded="false" aria-controls="collapseFour-menu2">
+                                      Дизайнер
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFour-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingFive-menu2">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseFive-menu2" aria-expanded="false" aria-controls="collapseFive-menu2">
+                                      Акции
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFive-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->
+                              <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingSix-menu2">
+                                  <h4 class="panel-title news">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-menu2" href="#collapseSix-menu2" aria-expanded="false" aria-controls="collapseSix-menu2">
+                                      Новинки
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSix-menu2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix-menu2">
+                                  <div class="panel-body">
+                                    <ul>
+                                        <li><a href="#">Футболки и поло</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                        <li><a href="#">Комбинезоны</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Верхняя одежда</a></li>
+                                        <li><a href="#">Блузки</a></li>
+                                        <li><a href="#">Джемперы</a></li>
+                                        <li><a href="#">Спортивные костюмы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end of panel -->                    
+                        </div>
+                        <!-- end of #accordion -->
+                  </div>
+                </div>
+    </div>
+    
+    
+    
+    <div class="gumb-bl">
+        <ul>
+           <li><a href="#">Войти</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Как оформить заказ</a></li>
+            <li><a href="#">Возврат</a></li>
+        </ul>
+    </div>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/cloud-zoom.1.0.2.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>
